@@ -9,14 +9,15 @@ const Header = () => (
     data-bs-theme="dark"
     fixed="top"
     className="mb-4 p-2"
+    collapseOnSelect
   >
     <Container>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Brand as={Link} to="/">
         MHW
       </Navbar.Brand>
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto" defaultActiveKey="#home" variant="underline">
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ms-auto" variant="underline">
           {navMenu.map((menu) => (
             <Nav.Item key={menu.label}>
               <Nav.Link as={Link} to={menu.to}>
