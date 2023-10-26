@@ -122,7 +122,6 @@ const Contact = () => {
             data-toggle="tooltip"
             data-placement="top"
             title="Resume"
-            download
           >
             <AiFillFileText style={{ fontSize: '1.7em' }} />
           </a>
@@ -134,7 +133,6 @@ const Contact = () => {
             data-toggle="tooltip"
             data-placement="top"
             title="Cover Letter"
-            download
           >
             <AiOutlineFileMarkdown style={{ fontSize: '1.7em' }} />
           </a>

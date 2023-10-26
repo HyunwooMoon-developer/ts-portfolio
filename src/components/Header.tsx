@@ -4,7 +4,7 @@ import { navMenu } from '../store';
 
 const Header = () => (
   <Navbar
-    expand="md"
+    expand="lg"
     bg="dark"
     data-bs-theme="dark"
     fixed="top"
@@ -13,14 +13,12 @@ const Header = () => (
   >
     <Container>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Brand as={Link} to="/">
-        MHW
-      </Navbar.Brand>
+      <Navbar.Brand href="/" /* as={Link} to="/" */>MHW</Navbar.Brand>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto" variant="underline">
           {navMenu.map((menu) => (
             <Nav.Item key={menu.label}>
-              <Nav.Link as={Link} to={menu.to}>
+              <Nav.Link href={menu.to} /* as={Link} to={menu.to} */>
                 {menu.icon} {menu.label}
               </Nav.Link>
             </Nav.Item>

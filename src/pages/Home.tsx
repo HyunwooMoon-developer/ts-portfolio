@@ -1,4 +1,4 @@
-import { Button, Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import TypeWriter from 'typewriter-effect';
 import { AiFillFileText, AiOutlineFileMarkdown } from 'react-icons/ai';
 import { jobTitle } from '../store';
@@ -6,7 +6,16 @@ import { jobTitle } from '../store';
 const Home = () => (
   <Container>
     <Row className="g-2">
-      <Col md={8} xs={12} style={{ marginTop: '20%' }}>
+      <Col md={4} xs={12} style={{ marginTop: '10%' }}>
+        <Image
+          src="/assets/hyunwoo.jpg"
+          rounded
+          fluid
+          alt="hyuwnoo"
+          className="home-picture"
+        />
+      </Col>
+      <Col md={8} xs={12} style={{ marginTop: '10%' }}>
         <h1>
           Hi! I'm <b className="home-name">Hyunwoo Moon</b> &&
         </h1>
@@ -21,16 +30,7 @@ const Home = () => (
             }}
           />
         </b>
-        <Row style={{ margin: '20%', marginTop: '20%', width: '60%' }}>
-          <Row>
-            <Button
-              className="contact-button"
-              style={{ backgroundColor: '#593df7', border: 'none' }}
-              href={'/contact'}
-            >
-              <b className="contact-button-text">Contact Me</b>
-            </Button>
-          </Row>
+        <Row style={{ margin: '10%', marginLeft: '25%', width: '60%' }}>
           <Row
             className="justify-content-md-center"
             style={{ marginTop: '10%' }}
@@ -44,7 +44,6 @@ const Home = () => (
                 data-toggle="tooltip"
                 data-placement="top"
                 title="Resume"
-                download
               >
                 <AiFillFileText style={{ fontSize: '1.7em' }} />
               </a>
@@ -56,22 +55,15 @@ const Home = () => (
                 data-toggle="tooltip"
                 data-placement="top"
                 title="Cover Letter"
-                download
               >
                 <AiOutlineFileMarkdown style={{ fontSize: '1.7em' }} />
               </a>
             </Col>
           </Row>
         </Row>
-      </Col>
-      <Col md={4} xs={12} style={{ marginTop: '10%' }}>
-        <Image
-          src="/assets/hyunwoo.jpg"
-          rounded
-          fluid
-          alt="hyuwnoo"
-          className="home-picture"
-        />
+        <Row className="justify-content-md-center">
+          <Image src="/assets/coding-allday.gif" fluid style={{ width: 600 }} />
+        </Row>
       </Col>
     </Row>
   </Container>
