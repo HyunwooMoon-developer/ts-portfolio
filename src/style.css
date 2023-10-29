@@ -24,6 +24,15 @@
   color: #593df7;
 }
 
+@media (max-width: 767px) {
+  .title {
+    font-size: 3em;
+    font-weight: bolder;
+    color: #593df7;
+    text-align: center;
+  }
+}
+
 /* Nav */
 .navbar {
   position: fixed !important;
