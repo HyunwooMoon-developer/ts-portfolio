@@ -12,17 +12,17 @@ import {
 import { BsFiletypeSql, BsGithub, BsGit } from 'react-icons/bs';
 import { SiExpress, SiJest, SiMongoose, SiApollographql } from 'react-icons/si';
 import { TbApi } from 'react-icons/tb';
-import htmlIcon from '../public/assets/html.svg';
-import cssIcon from '../public/assets/css.svg';
-import jsIcon from '../public/assets/js.svg';
-import typescriptIcon from '../public/assets/typescript.svg';
-import reactIcon from '../public/assets/react.svg';
-import nodeIcon from '../public/assets/node.svg';
-import vscodeIcon from '../public/assets/vscode.svg';
-import githubIcon from '../public/assets/github.svg';
-import linkeInIcon from '../public/assets/linkedin.svg';
-import graphqlIcon from '../public/assets/graphql.svg';
-import materialUIIcon from '../public/assets/material-ui.svg';
+import htmlIcon from '/assets/html.svg';
+import cssIcon from '/assets/css.svg';
+import jsIcon from '/assets/js.svg';
+import typescriptIcon from '/assets/typescript.svg';
+import reactIcon from '/assets/react.svg';
+import nodeIcon from '/assets/node.svg';
+import vscodeIcon from '/assets/vscode.svg';
+import githubIcon from '/assets/github.svg';
+import linkeInIcon from '/assets/linkedin.svg';
+import graphqlIcon from '/assets/graphql.svg';
+import materialUIIcon from '/assets/material-ui.svg';
 
 export const svgs: string[] = [
   htmlIcon,
